@@ -13,7 +13,8 @@ call plug#end()
 
 let g:coc_global_extensions = [
   \'coc-rust-analyzer',
-  \'coc-tsserver'
+  \'coc-tsserver',
+  \'coc-json'
   \]
 
 " Load individual initialization files
