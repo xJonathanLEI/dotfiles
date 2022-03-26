@@ -12,7 +12,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 let g:coc_global_extensions = [
-  \'coc-rust-analyzer'
+  \'coc-rust-analyzer',
+  \'coc-tsserver'
   \]
 
 " Load individual initialization files
