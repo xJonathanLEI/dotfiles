@@ -6,4 +6,10 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 call plug#begin()
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
+
+" Load individual initialization files
+runtime init/coc.vim
