@@ -1,3 +1,5 @@
+set termguicolors
+
 " Automatically install vim-plug
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -9,6 +11,9 @@ call plug#begin()
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
+
 call plug#end()
 
 let g:coc_global_extensions = [
@@ -19,3 +24,6 @@ let g:coc_global_extensions = [
 
 " Load individual initialization files
 runtime init/coc.vim
+runtime init/bufferline.vim
+
+call bufferline#highlight#setup()
