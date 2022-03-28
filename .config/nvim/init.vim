@@ -14,6 +14,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+
 call plug#end()
 
 let g:coc_global_extensions = [
