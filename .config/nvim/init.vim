@@ -16,6 +16,8 @@ Plug 'romgrk/barbar.nvim'
 
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 call plug#end()
 
 let g:coc_global_extensions = [
@@ -30,3 +32,8 @@ runtime init/bufferline.vim
 runtime keybindings.vim
 
 call bufferline#highlight#setup()
+
+lua require('plugin-config/nvim-treesitter')
+
+" This is needed for the solidity treesitter parser to work
+au BufRead,BufNewFile *.sol set ft=solidity
