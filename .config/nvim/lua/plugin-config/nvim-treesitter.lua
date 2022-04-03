@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-    ensure_installed = {"solidity"},
+    ensure_installed = "maintained",
 
     sync_install = false,
 

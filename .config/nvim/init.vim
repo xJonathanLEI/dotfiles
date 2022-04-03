@@ -29,11 +29,7 @@ let g:coc_global_extensions = [
 " Load individual initialization files
 runtime init/coc.vim
 runtime init/bufferline.vim
+runtime init/treesitter.vim
 runtime keybindings.vim
 
 call bufferline#highlight#setup()
-
-lua require('plugin-config/nvim-treesitter')
-
-" This is needed for the solidity treesitter parser to work
-au BufRead,BufNewFile *.sol set ft=solidity
