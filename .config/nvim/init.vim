@@ -1,4 +1,5 @@
 set termguicolors
+set number
 
 " Automatically install vim-plug
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
