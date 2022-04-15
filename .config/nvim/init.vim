@@ -26,7 +26,8 @@ let g:coc_global_extensions = [
   \'coc-rust-analyzer',
   \'coc-tsserver',
   \'coc-json',
-  \'coc-pyright'
+  \'coc-pyright',
+  \'coc-prettier'
   \]
 
 " Load individual initialization files
