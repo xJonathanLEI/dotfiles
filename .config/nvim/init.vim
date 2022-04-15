@@ -20,6 +20,8 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+Plug 'tomasiser/vim-code-dark'
+
 call plug#end()
 
 let g:coc_global_extensions = [
@@ -37,3 +39,5 @@ runtime init/treesitter.vim
 runtime keybindings.vim
 
 call bufferline#highlight#setup()
+
+colorscheme codedark
