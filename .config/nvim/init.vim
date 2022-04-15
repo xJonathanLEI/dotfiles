@@ -41,3 +41,6 @@ runtime keybindings.vim
 call bufferline#highlight#setup()
 
 colorscheme codedark
+
+" Command for copying to clipboard via xclip
+command ClipCopy call system('xclip -sel clip', getreg('"'))
