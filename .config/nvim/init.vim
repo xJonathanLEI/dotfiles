@@ -1,5 +1,6 @@
 set termguicolors
 set number
+set mouse=a
 
 " Automatically install vim-plug
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
