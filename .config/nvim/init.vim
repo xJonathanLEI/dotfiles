@@ -22,6 +22,8 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 Plug 'tomasiser/vim-code-dark'
 
+Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 let g:coc_global_extensions = [
