@@ -43,4 +43,4 @@ call bufferline#highlight#setup()
 colorscheme codedark
 
 " Command for copying to clipboard via xclip
-command ClipCopy call system('xclip -sel clip', getreg('"'))
+command ClipCopy call system('xclip -selection clipboard', getreg('"'))
