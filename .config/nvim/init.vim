@@ -47,3 +47,6 @@ colorscheme codedark
 
 " Command for copying to clipboard via xclip
 command ClipCopy call system('xclip -selection clipboard', getreg('"'))
+
+" Make netrw default to tree view
+let g:netrw_liststyle= 3
