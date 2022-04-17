@@ -24,6 +24,8 @@ Plug 'tomasiser/vim-code-dark'
 
 Plug 'tpope/vim-fugitive'
 
+Plug 'preservim/nerdtree'
+
 call plug#end()
 
 let g:coc_global_extensions = [
@@ -38,6 +40,7 @@ let g:coc_global_extensions = [
 runtime init/coc.vim
 runtime init/bufferline.vim
 runtime init/treesitter.vim
+runtime init/nerdtree.vim
 runtime keybindings.vim
 runtime file-types.vim
 
