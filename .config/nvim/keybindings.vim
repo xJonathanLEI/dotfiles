@@ -9,3 +9,6 @@ inoremap <c-s> <c-o>:w<cr>
 " Ctrl + B for toggling NERDTree
 nnoremap <c-b> :NERDTreeToggle<cr>
 inoremap <c-b> <c-o>:NERDTreeToggle<cr>
+
+" // for searching selected text
+vnoremap // y/\V<c-r>=escape(@",'/\')<cr><cr>
