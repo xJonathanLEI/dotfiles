@@ -29,6 +29,8 @@ Plug 'preservim/nerdtree'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 
+Plug 'vim-airline/vim-airline'
+
 call plug#end()
 
 let g:coc_global_extensions = [
