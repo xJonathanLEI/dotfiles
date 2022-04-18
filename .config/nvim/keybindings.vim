@@ -18,5 +18,5 @@ nnoremap <C-f> :CocList lines<cr>
 inoremap <C-f> <c-o>:CocList lines<cr>
 
 " Alt + Shift + S for file search
-nnoremap <S-A-s> :CocList grep<cr>
-inoremap <S-A-s> <c-o>:CocList grep<cr>
+nnoremap <S-A-s> :Telescope live_grep<cr>
+inoremap <S-A-s> <c-o>:Telescope live_grep<cr>

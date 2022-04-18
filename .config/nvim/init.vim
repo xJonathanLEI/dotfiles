@@ -34,6 +34,9 @@ Plug 'vim-airline/vim-airline'
 
 Plug 'airblade/vim-gitgutter'
 
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 call plug#end()
 
 let g:coc_global_extensions = [
