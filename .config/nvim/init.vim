@@ -42,7 +42,6 @@ runtime init/bufferline.vim
 runtime init/treesitter.vim
 runtime init/nerdtree.vim
 runtime keybindings.vim
-runtime file-types.vim
 
 call bufferline#highlight#setup()
 
