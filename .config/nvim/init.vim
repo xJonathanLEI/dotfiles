@@ -26,6 +26,9 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'preservim/nerdtree'
 
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
+
 call plug#end()
 
 let g:coc_global_extensions = [
@@ -52,3 +55,6 @@ command ClipCopy call system('xclip -selection clipboard', getreg('"'))
 
 " Make netrw default to tree view
 let g:netrw_liststyle= 3
+
+" Attempt to load directory-specific session
+autocmd VimEnter * call AutoLoadSession()
