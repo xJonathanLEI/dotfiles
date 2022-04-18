@@ -1,3 +1,5 @@
 {
-  "rust-analyzer.server.path": "~/.cargo/bin/rust-analyzer"
+  "rust-analyzer.server.path": "~/.cargo/bin/rust-analyzer",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/.local/bin/black"
 }
