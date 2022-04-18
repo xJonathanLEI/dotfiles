@@ -12,3 +12,11 @@ inoremap <c-b> <c-o>:NERDTreeToggle<cr>
 
 " // for searching selected text
 vnoremap // y/\V<c-r>=escape(@",'/\')<cr><cr>
+
+" Ctrl + F for line search
+nnoremap <C-f> :CocList lines<cr>
+inoremap <C-f> <c-o>:CocList lines<cr>
+
+" Alt + Shift + S for file search
+nnoremap <S-A-s> :CocList grep<cr>
+inoremap <S-A-s> <c-o>:CocList grep<cr>
