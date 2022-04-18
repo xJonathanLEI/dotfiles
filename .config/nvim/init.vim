@@ -1,6 +1,7 @@
 set termguicolors
 set number
 set mouse=a
+set updatetime=100
 
 " Automatically install vim-plug
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
@@ -30,6 +31,8 @@ Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 
 Plug 'vim-airline/vim-airline'
+
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
