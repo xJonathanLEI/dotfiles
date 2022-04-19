@@ -17,9 +17,13 @@ vnoremap // y/\V<c-r>=escape(@",'/\')<cr><cr>
 nnoremap <C-f> :CocList lines<cr>
 inoremap <C-f> <c-o>:CocList lines<cr>
 
-" Alt + Shift + S for file search
+" Alt + Shift + S for file content search
 nnoremap <S-A-s> :Telescope live_grep<cr>
 inoremap <S-A-s> <c-o>:Telescope live_grep<cr>
+
+" Ctrl + P for file name search
+nnoremap <C-P> :Telescope find_files find_command=rg,--ignore,--hidden,--files,--glob,!.git<cr>
+inoremap <C-P> <c-o>:Telescope find_files find_command=rg,--ignore,--hidden,--files,--glob,!.git<cr>
 
 " Ctrl + A for select all
 nnoremap <C-a> ggVG<cr>
