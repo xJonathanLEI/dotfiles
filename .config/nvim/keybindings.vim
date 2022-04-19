@@ -20,3 +20,7 @@ inoremap <C-f> <c-o>:CocList lines<cr>
 " Alt + Shift + S for file search
 nnoremap <S-A-s> :Telescope live_grep<cr>
 inoremap <S-A-s> <c-o>:Telescope live_grep<cr>
+
+" Ctrl + A for select all
+nnoremap <C-a> ggVG<cr>
+inoremap <C-a> <c-c>ggVG<cr>
