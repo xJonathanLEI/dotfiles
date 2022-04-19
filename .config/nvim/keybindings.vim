@@ -27,3 +27,23 @@ inoremap <C-a> <c-c>ggVG<cr>
 
 " Esc for exiting terminal mode
 tnoremap <Esc> <C-\><C-n>
+
+" Ctrl + X for cutting one line
+nnoremap <C-x> dd
+inoremap <C-x> <c-o>dd
+
+" Alt + Up for moving line upward
+nnoremap <A-Up> ddkP
+inoremap <A-Up> <c-o>dd<Up><c-o>P
+
+" Alt + K for moving line upward
+nnoremap <A-k> ddkP
+inoremap <A-k> <c-o>dd<Up><c-o>P
+
+" Alt + Down for moving line downward
+nnoremap <A-Down> ddjP
+inoremap <A-Down> <c-o>dd<Down><c-o>P
+
+" Alt + J for moving line upward
+nnoremap <A-j> ddjP
+inoremap <A-j> <c-o>dd<Down><c-o>P
