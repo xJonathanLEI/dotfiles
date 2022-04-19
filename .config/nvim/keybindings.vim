@@ -24,3 +24,6 @@ inoremap <S-A-s> <c-o>:Telescope live_grep<cr>
 " Ctrl + A for select all
 nnoremap <C-a> ggVG<cr>
 inoremap <C-a> <c-c>ggVG<cr>
+
+" Esc for exiting terminal mode
+tnoremap <Esc> <C-\><C-n>
