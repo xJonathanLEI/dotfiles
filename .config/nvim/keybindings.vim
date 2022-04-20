@@ -51,3 +51,17 @@ inoremap <A-Down> <c-o>dd<Down><c-o>P
 " Alt + J for moving line upward
 nnoremap <A-j> ddjP
 inoremap <A-j> <c-o>dd<Down><c-o>P
+
+" Ctrl + Left/H for moving back one word
+nnoremap <C-Left> b
+nnoremap <C-h> b
+inoremap <C-h> <c-o>b
+
+" Ctrl + Right/L for moving back one word
+nnoremap <C-Right> w
+nnoremap <C-l> w
+inoremap <C-l> <c-o>w
+
+" Alt + Backspace for deleting word
+nnoremap <A-BS> db
+inoremap <A-BS> <c-w>
