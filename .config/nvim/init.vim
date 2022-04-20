@@ -68,6 +68,7 @@ runtime init/bufferline.vim
 runtime init/treesitter.vim
 runtime init/nerdtree.vim
 runtime init/nerdtree_git.vim
+runtime init/telescope.vim
 runtime keybindings.vim
 
 call bufferline#highlight#setup()
