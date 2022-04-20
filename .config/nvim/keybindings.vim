@@ -52,15 +52,17 @@ inoremap <A-Down> <c-o>dd<Down><c-o>P
 nnoremap <A-j> ddjP
 inoremap <A-j> <c-o>dd<Down><c-o>P
 
-" Ctrl + Left/H for moving back one word
-nnoremap <C-Left> b
-nnoremap <C-h> b
-inoremap <C-h> <c-o>b
+" Alt + Left/H for moving back one word
+nnoremap <A-Left> b
+nnoremap <A-h> b
+inoremap <A-Left> <c-o>b
+inoremap <A-h> <c-o>b
 
-" Ctrl + Right/L for moving back one word
-nnoremap <C-Right> w
-nnoremap <C-l> w
-inoremap <C-l> <c-o>w
+" Atl + Right/L for moving back one word
+nnoremap <A-Right> w
+nnoremap <A-l> w
+inoremap <A-Right> <c-o>w
+inoremap <A-l> <c-o>w
 
 " Alt + Backspace for deleting word
 nnoremap <A-BS> db
