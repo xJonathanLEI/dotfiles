@@ -20,6 +20,7 @@ inoremap <C-f> <c-o>:CocList lines<cr>
 " Alt + Shift + S for file content search
 nnoremap <S-A-s> :Telescope live_grep<cr>
 inoremap <S-A-s> <c-o>:Telescope live_grep<cr>
+xnoremap <S-A-s> y:lua require'telescope.builtin'.grep_string({search = vim.fn.getreg()})<cr>
 
 " Ctrl + P for file name search
 nnoremap <C-P> :Telescope find_files find_command=rg,--ignore,--hidden,--files,--glob,!.git<cr>
