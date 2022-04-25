@@ -68,3 +68,14 @@ inoremap <A-l> <c-o>w
 " Alt + Backspace for deleting word
 nnoremap <A-BS> db
 inoremap <A-BS> <c-w>
+
+" F12 for toggling mouse support
+function! ToggleMouse()
+    if &mouse == 'a'
+        set mouse=
+    else
+        set mouse=a
+    endif
+endfunc
+nnoremap <F12> :call ToggleMouse()<cr>
+inoremap <F12> <c-o>:call ToggleMouse()<cr>
