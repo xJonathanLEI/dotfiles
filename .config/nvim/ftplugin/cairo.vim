@@ -29,4 +29,5 @@ function FormatCairo()
     endif
 endfunction
 
+setlocal shiftwidth=4
 command -buffer Format call FormatCairo()
