@@ -59,11 +59,11 @@ nnoremap <A-h> b
 inoremap <A-Left> <c-o>b
 inoremap <A-h> <c-o>b
 
-" Atl + Right/L for moving back one word
-nnoremap <A-Right> w
-nnoremap <A-l> w
-inoremap <A-Right> <c-o>w
-inoremap <A-l> <c-o>w
+" Atl + Right/L for moving forward one word
+nnoremap <A-Right> e
+nnoremap <A-l> e
+inoremap <A-Right> <c-c>ea
+inoremap <A-l> <c-c>ea
 
 " Alt + Backspace for deleting word
 nnoremap <A-BS> db
