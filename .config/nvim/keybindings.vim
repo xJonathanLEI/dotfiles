@@ -79,3 +79,6 @@ function! ToggleMouse()
 endfunc
 nnoremap <F12> :call ToggleMouse()<cr>
 inoremap <F12> <c-o>:call ToggleMouse()<cr>
+
+" 0 for going to first char / start of line
+nnoremap <expr> <silent> 0 col('.') == match(getline('.'),'\S')+1 ? '0' : '^'
