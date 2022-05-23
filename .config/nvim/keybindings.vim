@@ -37,21 +37,38 @@ tnoremap <Esc> <C-\><C-n>
 nnoremap <C-x> dd
 inoremap <C-x> <c-o>dd
 
-" Alt + Up for moving line upward
-nnoremap <A-Up> ddkP
-inoremap <A-Up> <c-o>dd<Up><c-o>P
+" Alt + Up/K for moving line upward
+function! MoveLineUp()
+    let l:current_line_no = line(".")
+    if l:current_line_no > 1
+	let l:last_line = getline(l:current_line_no - 1)
+        let l:current_line = getline(l:current_line_no)
+	call setline(l:current_line_no - 1, l:current_line)
+        call cursor(l:current_line_no - 1, ".")
+	call setline(l:current_line_no, l:last_line)
+    endif
+endfunc
+nnoremap <silent> <A-Up> :call MoveLineUp()<cr>
+inoremap <silent> <A-Up> <c-o>:call MoveLineUp()<cr>
+nnoremap <silent> <A-k> :call MoveLineUp()<cr>
+inoremap <silent> <A-k> <c-o>:call MoveLineUp()<cr>
 
-" Alt + K for moving line upward
-nnoremap <A-k> ddkP
-inoremap <A-k> <c-o>dd<Up><c-o>P
-
-" Alt + Down for moving line downward
-nnoremap <A-Down> ddjP
-inoremap <A-Down> <c-o>dd<Down><c-o>P
-
-" Alt + J for moving line upward
-nnoremap <A-j> ddjP
-inoremap <A-j> <c-o>dd<Down><c-o>P
+" Alt + Down/J for moving line downward
+function! MoveLineDown()
+    let l:current_line_no = line(".")
+    let l:last_line_no = line("$")
+    if l:current_line_no < l:last_line_no
+	let l:next_line = getline(l:current_line_no + 1)
+        let l:current_line = getline(l:current_line_no)
+	call setline(l:current_line_no + 1, l:current_line)
+        call cursor(l:current_line_no + 1, ".")
+	call setline(l:current_line_no, l:next_line)
+    endif
+endfunc
+nnoremap <silent> <A-Down> :call MoveLineDown()<cr>
+inoremap <silent> <A-Down> <c-o>:call MoveLineDown()<cr>
+nnoremap <silent> <A-j> :call MoveLineDown()<cr>
+inoremap <silent> <A-j> <c-o>:call MoveLineDown()<cr>
 
 " Alt + Left/H for moving back one word
 nnoremap <A-Left> b
