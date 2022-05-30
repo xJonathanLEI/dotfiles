@@ -7,8 +7,23 @@ nnoremap <c-s> :w<cr>
 inoremap <c-s> <c-o>:w<cr>
 
 " Ctrl + B for toggling NERDTree
-nnoremap <c-b> :NERDTreeToggle<cr>
-inoremap <c-b> <c-o>:NERDTreeToggle<cr>
+function! ToggleNerdtree()
+    if exists("g:NERDTree")
+        if g:NERDTree.IsOpen()
+            NERDTreeClose
+        else
+	    if &buftype ==# 'terminal'
+                NERDTreeFocus
+            else
+                " TODO: only do NERDTreeFind if the file is inside the current
+	        " folder
+                NERDTreeFind
+	    endif
+        endif
+    endif
+endfunc
+nnoremap <silent> <C-b> :call ToggleNerdtree()<cr>
+inoremap <silent> <C-b> <c-o>:call ToggleNerdtree()<cr>
 
 " // for searching selected text
 vnoremap // y/\V<c-r>=escape(@",'/\')<cr><cr>
