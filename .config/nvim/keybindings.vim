@@ -114,3 +114,11 @@ inoremap <F12> <c-o>:call ToggleMouse()<cr>
 
 " 0 for going to first char / start of line
 nnoremap <expr> <silent> 0 col('.') == match(getline('.'),'\S')+1 ? '0' : '^'
+
+" Delete without yanking
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+
+" Replace currently selected text with default register without yanking it
+" TODO: handle last line bug
+vnoremap <leader>p "_dP
