@@ -57,7 +57,7 @@ Plug 'roxma/vim-tmux-clipboard'
 call plug#end()
 
 let g:coc_global_extensions = [
-  \'coc-rust-analyzer',
+  \'coc-rust-analyzer@0.63.0',
   \'coc-tsserver',
   \'coc-json',
   \'coc-pyright',
