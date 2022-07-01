@@ -1,7 +1,7 @@
 function FormatSolidity()
     let l:save_view = winsaveview()
     let buffer_lines = getline(1,'$')
-    let formatted = system("forge fmt --raw", join(buffer_lines, "\n"))
+    let formatted = system("forge fmt --raw -", join(buffer_lines, "\n"))
     if v:shell_error != 0
         echo formatted
     else
