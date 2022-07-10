@@ -62,7 +62,8 @@ let g:coc_global_extensions = [
   \'coc-json',
   \'coc-pyright',
   \'coc-prettier',
-  \'coc-lists'
+  \'coc-lists',
+  \'coc-go'
   \]
 
 " Load individual initialization files
