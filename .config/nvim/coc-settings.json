@@ -2,5 +2,6 @@
   "rust-analyzer.server.path": "~/.cargo/bin/rust-analyzer",
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/.local/bin/black",
-  "list.source.grep.args": ["--hidden", "--glob", "!.git"]
+  "list.source.grep.args": ["--hidden", "--glob", "!.git"],
+  "suggest.noselect": true
 }
