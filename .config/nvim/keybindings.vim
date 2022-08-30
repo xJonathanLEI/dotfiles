@@ -48,10 +48,6 @@ inoremap <C-a> <c-c>ggVG<cr>
 " Esc for exiting terminal mode
 tnoremap <Esc> <C-\><C-n>
 
-" Ctrl + X for cutting one line
-nnoremap <C-x> dd
-inoremap <C-x> <c-o>dd
-
 " Alt + Up/K for moving line upward
 function! MoveLineUp()
     let l:current_line_no = line(".")
