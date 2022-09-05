@@ -118,3 +118,9 @@ vnoremap <leader>d "_d
 " Replace currently selected text with default register without yanking it
 " TODO: handle last line bug
 vnoremap <leader>p "_dP
+
+" ] + E for next coc diagnostic
+nnoremap <silent> ]e :call CocAction('diagnosticNext')<cr>
+
+" [ + E for previous coc diagnostic
+nnoremap <silent> [e :call CocAction('diagnosticPrevious')<cr>
