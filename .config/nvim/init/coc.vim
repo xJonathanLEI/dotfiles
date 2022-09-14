@@ -151,3 +151,7 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " https://github.com/neoclide/coc.nvim/commit/87c065ebde6bd28a2cc344430a714eb4025b1434
 command! -nargs=* -range CocAction :call coc#rpc#notify('codeActionRange', [<line1>, <line2>, <f-args>])
 command! -nargs=* -range CocFix :call coc#rpc#notify('codeActionRange', [<line1>, <line2>, 'quickfix'])
+
+" Forces old inlay hint style that was changed in:
+" https://github.com/neoclide/coc.nvim/commit/38a95c8c042f957d2fb1b262378d6c9b7d5d120f
+hi CocInlayHint ctermfg=12 ctermbg=NONE guifg=#15aabf guibg=None
