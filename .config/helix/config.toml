@@ -1,0 +1,23 @@
+theme = "fleetish_black"
+
+[editor]
+scrolloff = 1
+auto-format = false
+true-color = true
+bufferline = "always"
+
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal]
+"A-f" = ":format"
+
+[keys.insert]
+"A-f" = ":format"
+j = { k = "normal_mode" }
