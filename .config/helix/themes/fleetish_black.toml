@@ -49,8 +49,9 @@
 
 # ui specific
 "ui.background" = { bg = "darkest" } # .separator
-"ui.cursor" = { bg = "white", fg = "black" } # .insert / .select / .match / .primary
-"ui.cursor.match" = { fg = "light", bg = "#666666" } # .insert / .select / .match / .primary
+"ui.cursor" = { bg = "#999999", fg = "black" } # .insert / .select / .match / .primary
+"ui.cursor.match" = { fg = "light", bg = "#555555" } # .insert / .select / .match / .primary
+"ui.cursor.primary" = { fg = "black", bg = "white" } # .insert / .select / .match / .primary
 "ui.cursorline" = { bg = "darker" }
 "ui.linenr" = { fg = "dark_gray" } # .selected
 "ui.linenr.selected" = { fg = "light_gray", bg = "darker" }
@@ -67,7 +68,7 @@
 "ui.virtual.ruler" = { bg = "darker"}
 "ui.menu" = { fg = "light", bg = "dark" } # .selected
 "ui.menu.selected" = { fg = "lightest", bg = "blue_accent" } # .selected
-"ui.selection" = { fg = "black", bg = "blue" }
+"ui.selection" = { fg = "white", bg = "#2075b4" }
 "ui.selection.primary" = { fg = "white", bg = "blue" }
 "hint" = { fg = "blue_accent"}
 "info" = { fg = "yellow_accent" }
