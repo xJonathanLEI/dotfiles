@@ -17,7 +17,8 @@ hidden = false
 
 [keys.normal]
 "A-f" = ":format"
+"space" = { "c" = ":buffer-close" }
 
 [keys.insert]
 "A-f" = ":format"
-j = { k = "normal_mode" }
+"j" = { "k" = "normal_mode" }
