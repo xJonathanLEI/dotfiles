@@ -4,10 +4,10 @@
 "constructor" = { fg = "orange" }
 "constant" = { fg = "green" }
 # "constant.builtin" = {} # .boolean
-"constant.builtin.boolean" = { fg = "green" } # .boolean
+"constant.builtin.boolean" = { fg = "magenta" } # .boolean
 # "constant.character" = {} #.escape
 "constant.numeric" = { fg = "yellow" } # .integer / .float
-"string" = { fg = "pink" } # .regexp
+"string" = { fg = "#aad94c" } # .regexp
 # "string.special" = {} #.path / .url / .symbol
 "string.special" = { modifiers = ["underlined"] } #.path / .url / .symbol
 "comment" = { fg = "dark_gray" } # .line
@@ -97,6 +97,7 @@ pink = "#E878DE"
 green = "#78D0BD"
 orange = "#ECA775"
 yellow = "#F9CA6A"
+magenta = "#D2A6FF"
 
 purple_accent = "#6363EE"
 blue_accent = "#2197F3"
