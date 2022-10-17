@@ -6,6 +6,9 @@ auto-format = false
 true-color = true
 bufferline = "always"
 
+[editor.statusline]
+right = ["diagnostics", "selections", "file-type", "file-line-ending", "file-encoding", "position"]
+
 [editor.lsp]
 display-messages = true
 
