@@ -1,6 +1,6 @@
-" Alt + Shift + F for formatting
-nnoremap <S-A-f> :Format<cr>
-inoremap <S-A-f> <c-o>:Format<cr>
+" Alt + F for formatting
+nnoremap <A-f> :Format<cr>
+inoremap <A-f> <c-o>:Format<cr>
 
 " Ctrl + S for saving
 nnoremap <c-s> :w<cr>
