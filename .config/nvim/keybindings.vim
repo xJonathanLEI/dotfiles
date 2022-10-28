@@ -1,3 +1,6 @@
+" jk for existing insert mode
+inoremap jk <Esc>
+
 " Alt + F for formatting
 nnoremap <A-f> :Format<cr>
 inoremap <A-f> <c-o>:Format<cr>
