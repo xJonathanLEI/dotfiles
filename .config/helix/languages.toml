@@ -15,6 +15,10 @@ name = "markdown"
 formatter = { command = "prettier" , args = ["--parser", "markdown"] }
 
 [[language]]
+name = "python"
+formatter = { command = "black" , args = ["-"] }
+
+[[language]]
 name = "tsx"
 formatter = { command = "prettier" , args = ["--parser", "typescript"] }
 
