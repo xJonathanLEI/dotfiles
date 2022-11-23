@@ -3,6 +3,10 @@ name = "cairo"
 formatter = { command = "cairo-format" , args = ["-"] }
 
 [[language]]
+name = "html"
+formatter = { command = "prettier" , args = ["--parser", "html"] }
+
+[[language]]
 name = "javascript"
 formatter = { command = "prettier" , args = ["--parser", "typescript"] }
 
