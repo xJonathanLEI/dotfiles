@@ -64,6 +64,7 @@
 "ui.window" = { fg = "dark", bg = "darkest" }
 "ui.help" = { fg = "light", bg = "dark" }
 "ui.text" = { fg = "light" } # .focus / .info
+"ui.text.inactive" = { fg = "dark_gray" }
 "ui.virtual" = { fg = "dark" } # .ruler / .whitespace
 "ui.virtual.ruler" = { bg = "darker"}
 "ui.menu" = { fg = "light", bg = "dark" } # .selected
