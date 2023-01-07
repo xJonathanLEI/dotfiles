@@ -7,6 +7,7 @@ idle-timeout = 50
 completion-trigger-len = 1
 true-color = true
 bufferline = "always"
+soft-wrap.enable = true
 
 [editor.statusline]
 right = ["diagnostics", "selections", "primary-selection-length", "file-type", "file-line-ending", "file-encoding", "position"]
