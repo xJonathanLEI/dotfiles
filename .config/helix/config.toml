@@ -24,6 +24,10 @@ hidden = false
 [keys.normal]
 "A-f" = ":format"
 "space" = { "c" = ":buffer-close" }
+"^" = "make_search_word_bounded"
+
+[keys.select]
+"^" = "make_search_word_bounded"
 
 [keys.insert]
 "A-f" = ":format"
