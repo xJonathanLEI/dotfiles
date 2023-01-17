@@ -35,7 +35,10 @@
 "markup.heading.5" = { fg = "green" }
 "markup.heading.6" = { fg = "blue" }
 "markup.list" = { fg = "green" } # .unnumbered / .numbered
-"markup.link" = { fg = "yellow" } # .url / .label / .text
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link.url" = { fg = "yellow", modifiers = ["underlined"] } # .url / .label / .text
+"markup.link.text" = { fg = "yellow" } # .url / .label / .text
 "markup.raw" = { fg = "pink" } # .inline / .block
 # "diff" = {} # .plus / .minus
 "diff.plus" = { fg = "green" }
