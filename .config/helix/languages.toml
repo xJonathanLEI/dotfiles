@@ -23,6 +23,10 @@ name = "python"
 formatter = { command = "black" , args = ["-"] }
 
 [[language]]
+name = "rust"
+config = { checkOnSave = { command = "clippy" } }
+
+[[language]]
 name = "tsx"
 formatter = { command = "prettier" , args = ["--parser", "typescript"] }
 
