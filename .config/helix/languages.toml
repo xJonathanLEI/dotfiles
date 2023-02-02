@@ -27,6 +27,10 @@ name = "rust"
 config = { checkOnSave = { command = "clippy" } }
 
 [[language]]
+name = "solidity"
+formatter = { command = "forge" , args = ["fmt", "-r", "-"] }
+
+[[language]]
 name = "tsx"
 formatter = { command = "prettier" , args = ["--parser", "typescript"] }
 
