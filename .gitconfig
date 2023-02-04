@@ -1,3 +1,6 @@
+[pull]
+    ff = only
+
 [core]
     pager = delta
 
