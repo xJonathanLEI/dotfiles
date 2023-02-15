@@ -15,6 +15,13 @@ name = "json"
 formatter = { command = "prettier" , args = ["--parser", "json"] }
 
 [[language]]
+name = "ltex"
+scope = "source.ltex"
+file-types = []
+roots = []
+language-server = { command = "ltex-ls" }
+
+[[language]]
 name = "markdown"
 formatter = { command = "prettier" , args = ["--parser", "markdown"] }
 
