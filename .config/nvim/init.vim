@@ -54,6 +54,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Tmux buffer integration
 Plug 'roxma/vim-tmux-clipboard'
 
+" GitHub Copilot
+Plug 'github/copilot.vim'
+
 call plug#end()
 
 let g:coc_global_extensions = [
