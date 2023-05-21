@@ -1,3 +1,9 @@
+[language-server.ltex-ls]
+command = "ltex-ls"
+
+[language-server.rust-analyzer.config]
+checkOnSave = { command = "clippy" }
+
 [[language]]
 name = "cairo"
 formatter = { command = "cairo-format" , args = ["-"] }
@@ -23,7 +29,7 @@ name = "ltex"
 scope = "source.ltex"
 file-types = []
 roots = []
-language-server = { command = "ltex-ls" }
+language-servers = [ "ltex-ls" ]
 
 [[language]]
 name = "markdown"
@@ -32,10 +38,6 @@ formatter = { command = "prettier" , args = ["--parser", "markdown"] }
 [[language]]
 name = "python"
 formatter = { command = "black" , args = ["-"] }
-
-[[language]]
-name = "rust"
-config = { checkOnSave = { command = "clippy" } }
 
 [[language]]
 name = "solidity"
