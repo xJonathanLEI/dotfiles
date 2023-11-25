@@ -20,7 +20,7 @@ font:
   bold_italic:
     family: "UbuntuMono Nerd Font"
     style: "Bold Italic"
-  size: 13.0
+  size: 12.0
 
 colors:
   primary:
