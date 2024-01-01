@@ -1,5 +1,3 @@
-theme = "fleetish_black"
-
 [editor]
 scrolloff = 1
 auto-format = false
