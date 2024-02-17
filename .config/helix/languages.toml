@@ -33,6 +33,7 @@ language-servers = [ "ltex-ls" ]
 
 [[language]]
 name = "markdown"
+file-types = ["md", "markdown", "PULLREQ_EDITMSG", "mkd", "mdwn", "mdown", "markdn", "mdtxt", "mdtext", "workbook", "mdx"]
 formatter = { command = "prettier" , args = ["--parser", "markdown"] }
 
 [[language]]
