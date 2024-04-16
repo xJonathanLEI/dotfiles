@@ -96,6 +96,11 @@ chars = "\u001B0"
 key = "0"
 mods = "Alt"
 
+[[keyboard.bindings]]
+chars = "\u001B,"
+key = ","
+mods = "Alt"
+
 [mouse]
 hide_when_typing = true
 
