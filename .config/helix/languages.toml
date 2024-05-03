@@ -54,4 +54,5 @@ formatter = { command = "prettier" , args = ["--parser", "typescript"] }
 
 [[language]]
 name = "yaml"
+file-types = ["yml", "yaml", { glob = ".kube/config" }]
 formatter = { command = "prettier" , args = ["--parser", "yaml"] }
