@@ -1,12 +1,17 @@
 [language-server.ltex-ls]
 command = "ltex-ls"
 
+[language-server.scarb-ls]
+command = "scarb"
+args = ["cairo-language-server"]
+
 [language-server.rust-analyzer.config]
 checkOnSave = { command = "clippy" }
 
 [[language]]
 name = "cairo"
 formatter = { command = "cairo-format" , args = ["-"] }
+language-servers = [ "scarb-ls" ]
 
 [[language]]
 name = "graphql"
