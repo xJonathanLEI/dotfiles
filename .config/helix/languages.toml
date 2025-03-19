@@ -15,7 +15,7 @@ language-servers = [ "scarb-ls" ]
 
 [[language]]
 name = "graphql"
-formatter = { command = "prettier" , args = ["--parser", "graphql"] }
+formatter = { command = "biome", args = ["format", "--stdin-file-path", "test.graphql"] }
 
 [[language]]
 name = "html"
@@ -23,11 +23,11 @@ formatter = { command = "prettier" , args = ["--parser", "html"] }
 
 [[language]]
 name = "javascript"
-formatter = { command = "prettier" , args = ["--parser", "typescript"] }
+formatter = { command = "biome", args = ["format", "--stdin-file-path", "test.js"] }
 
 [[language]]
 name = "json"
-formatter = { command = "prettier" , args = ["--parser", "json"] }
+formatter = { command = "biome", args = ["format", "--stdin-file-path", "test.json"] }
 
 [[language]]
 name = "ltex"
@@ -51,11 +51,11 @@ formatter = { command = "forge" , args = ["fmt", "-r", "-"] }
 
 [[language]]
 name = "tsx"
-formatter = { command = "prettier" , args = ["--parser", "typescript"] }
+formatter = { command = "biome", args = ["format", "--stdin-file-path", "test.tsx"] }
 
 [[language]]
 name = "typescript"
-formatter = { command = "prettier" , args = ["--parser", "typescript"] }
+formatter = { command = "biome", args = ["format", "--stdin-file-path", "test.ts"] }
 
 [[language]]
 name = "yaml"
