@@ -27,7 +27,7 @@ formatter = { command = "biome", args = ["format", "--stdin-file-path", "test.js
 
 [[language]]
 name = "json"
-formatter = { command = "biome", args = ["format", "--stdin-file-path", "test.json"] }
+formatter = { command = "prettier" , args = ["--parser", "json"] }
 
 [[language]]
 name = "ltex"
