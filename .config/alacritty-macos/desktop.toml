@@ -104,7 +104,7 @@ mods = "Alt"
 [mouse]
 hide_when_typing = true
 
-[shell]
+[terminal.shell]
 args = ["--login"]
 program = "/opt/homebrew/bin/bash"
 
