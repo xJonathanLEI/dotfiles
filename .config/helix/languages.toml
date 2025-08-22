@@ -8,6 +8,15 @@ args = ["cairo-language-server"]
 [language-server.rust-analyzer.config]
 checkOnSave = { command = "clippy" }
 
+[language-server.typescript-language-server]
+command = "vtsls"
+args = ["--stdio"]
+config.hostInfo = "helix"
+
+[language-server.typescript-language-server.config.typescript]
+updateImportsOnFileMove = { enabled = "always" }
+suggest = { completeFunctionCalls = true }
+
 [[language]]
 name = "cairo"
 formatter = { command = "cairo-format" , args = ["-"] }
