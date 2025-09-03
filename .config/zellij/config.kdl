@@ -248,6 +248,7 @@ keybinds clear-defaults=true {
             }
             SwitchToMode "normal"
         }
+        bind "w" { SwitchToMode "tab"; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "normal"; }
     }
 }
