@@ -230,6 +230,7 @@ keybinds clear-defaults=true {
         bind ";" { FocusPreviousPane; SwitchToMode "normal"; }
         bind "Ctrl b" { Write 2; SwitchToMode "normal"; }
         bind "c" { NewTab; SwitchToMode "normal"; }
+        bind "e" { EditScrollback; SwitchToMode "normal"; }
         bind "h" { MoveFocus "left"; SwitchToMode "normal"; }
         bind "j" { MoveFocus "down"; SwitchToMode "normal"; }
         bind "k" { MoveFocus "up"; SwitchToMode "normal"; }
